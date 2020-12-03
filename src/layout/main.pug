@@ -1,0 +1,13 @@
+block variables
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        title #{title}
+        style
+            block style
+    body(class=elementClass)
+        .wrapper
+            .content-wrapper
+                block content

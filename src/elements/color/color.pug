@@ -1,0 +1,17 @@
+mixin colorItem(nameClassItem,title, text)
+    .colorBlockItems
+        div(class= 'colorItemInner colorItemInner' + nameClassItem)
+        .titleItem
+            p(class= 'title')= title
+            p(class= 'text')= text
+
+.colorBlock
+    +colorItem('First', 'Dark Shade 100%', '#1F2041')
+    +colorItem('Second', 'Dark Shade 75%', '#1F2041')
+    +colorItem('Third', 'Dark Shade 50%', '#1F2041')
+    +colorItem('Fourth', 'Dark Shade 25%', '#1F2041')
+    +colorItem('Fifth', 'Dark Shade 5%', '#1F2041')
+    +colorItem('Sixth', 'Purple', '#BC9CFF')
+    +colorItem('Seventh', 'Green', '#6FCF97')
+
+
